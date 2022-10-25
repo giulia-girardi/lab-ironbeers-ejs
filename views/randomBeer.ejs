@@ -1,8 +1,5 @@
 <% oneRandomBeer.forEach(beer => { %>
-    <img href=<%- beer.image_url %>>
-    <p><%- beer.name %> </p>
-    <p><%- beer.description %> </p>
-    <p><%- beer.tagline %> </p>
-    <p><%- beer.food_pairing %> </p>
-    <p><%- beer.brewers_tips %> </p>
+    <%- include("partials/beer") %> 
+    <p><% beer.food_pairing %> </p>
+    <p><% beer.brewers_tips %> </p>
 <% }) %>

@@ -30,5 +30,4 @@ app.get('/random-beer', async (req, res) => {
   res.render('randomBeer', {oneRandomBeer});
 });
 
-
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
